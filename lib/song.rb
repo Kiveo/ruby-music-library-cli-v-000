@@ -40,7 +40,7 @@ require 'pry'
   end
 
   def self.find_by_name(name) #2/3
-    @@all.detect {|song| song.name == name }
+    @@all.detect {|song| song.name }
   end
 
   def self.find_or_create_by_name(name) #3/3
