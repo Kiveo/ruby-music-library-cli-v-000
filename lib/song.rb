@@ -44,7 +44,7 @@ require 'pry'
   end
 
   def self.find_or_create_by_name(name) #3/3
-    binding.pry
+    # binding.pry
     self.find_by_name(name) || self.create(name)
   end
 
