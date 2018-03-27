@@ -48,6 +48,7 @@ require 'pry'
     # find_by_name(name) ? find_by_name(name) : create(name)
     # find_by_name(name) || create(name)
     if find_by_name(name) == nil
+      binding.pry 
       return create(name)
     else
       find_by_name(name)
