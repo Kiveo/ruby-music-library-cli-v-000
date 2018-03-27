@@ -44,15 +44,8 @@ require 'pry'
   end
 
   def self.find_or_create_by_name(name) #3/3
-    # binding.pry
-    # find_by_name(name) ? find_by_name(name) : create(name)
+    binding.pry
     self.find_by_name(name) || self.create(name)
-    # if find_by_name(name) == nil
-    #   # binding.pry
-    #   return create(name)
-    # else
-    #   find_by_name(name)
-    # end
   end
 
 end
